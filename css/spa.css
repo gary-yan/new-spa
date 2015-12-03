@@ -1,0 +1,59 @@
+/*
+*spa.css
+*Root namespace style
+*/
+
+/** Begin reset */
+/* *表示全部的样式都是这样：重置大多数选择器。因为浏览器的默认行为并不可靠*/
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	-webkit-box-sizing : border-box;
+ 	-moz-box-sizing : border-box;
+ 	box-sizing : border-box;
+  }
+  h1,h2,h3,h4,h5,h6,p{margin-bottom: 10px;}
+  ol,ul,dl{list-style-position: inside;}
+  /** End reset */
+  /** Begin standard selectors 修改标准选择器 跨平台引用拥有一致的外观*/
+  body{
+  	font :13px 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+  	color: #444;
+  	background-color: #888;
+  } 
+  a{text-decoration: none;}  /*表示文本修饰属性*/
+  a:link,a:visited{color: inherit;}/* 已访问的链接 */
+  a:hover{text-decoration: underline;}/* 当有鼠标悬停在链接上 */
+
+  strong{
+  	font-weight: 800;
+  	color: #000;
+  }
+  /** End Stardard selectors */
+  /** Begin spa namespace selectors */
+  /** id选择器 同一个页面只能出现一次*/
+  #spa{
+  	position: absolute;
+  	top:8px;
+  	left: 8px;
+  	bottom: 8px;
+  	right: 8px;
+
+  	min-height: 500px;
+  	min-width: 500px;
+  	overflow: hidden; /* 隐藏内容溢出 */
+
+  	background-color: #fff;
+  	border-radius: 0 8px 0 8px;
+
+  }
+/**End spa namespace selectors */
+/** Begin utility selectors 为其他所有模块提供通用选择器 它们以spa－x作为前缀*/
+.spa-x-select {}/** 类选择器 可以多次使用*/
+.spa-x-clearfloat{
+	height: 0 !important;
+	float: none !important;
+	visibility: hidden !important;
+	clear: both !important;   
+}
+/** End utility selectors */
