@@ -1,0 +1,11 @@
+Question
+
+12 05
+$container : $container,什么语法？
+$chat : $container.find('.spa-shell-chat')//?
+
+DOM method 具体指的是什么
+
+height : configMap.chat_extend_height
+和
+height ＝ configMap.chat_extend_height的区别

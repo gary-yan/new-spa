@@ -72,8 +72,13 @@
     	right: 0;
     	width: 300px;
     	height: 15px;
+    	cursor : pointer; /* 当光标悬停在划块上时 鼠标指针变为手形*/
     	background: red;
+    	border-radius: 5px 0 0 0; /*使用圆角 更好看一些 */
     	z-index: 1;
+    }
+    .spa-shell-chat:hover{
+    	background: #a00; /*光标悬停在滑块上面 更改滑块的背景色 */
     }
     .spa-shell-modal{
     	margin-top: -200px;
