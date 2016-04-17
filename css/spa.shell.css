@@ -4,11 +4,11 @@
 */
 .spa-shell-head,.spa-shell-head-logo,.spa-shell-head-acct,.spa-shell-head-search,
 	.spa-shell-main,.spa-shell-main-nav,.spa-shell-main-content,.spa-shell-foot,
-	.spa-shell-chat,
+	/*.spa-shell-chat,*/
 	.spa-shell-modal{
 		position : absolute;
 	}
-    .spa-sheell-head{
+    .spa-shell-head{
     	top : 0;
     	left: 0;
     	right: 0;
@@ -19,11 +19,11 @@
     	left: 4px;
     	height: 32px;
     	width: 128px;
-    	background: organge;
+    	background: orange;
     }
     .spa-shell-head-acct{
     	top: 4px;
-    	left: 0;
+    	right: 0;
     	height: 64px;
     	width: 32px;
     	background: green;
@@ -67,19 +67,21 @@
     	right: 0;
     	height: 40px;
     }
+   /* delete
     .spa-shell-chat{
     	bottom: 0;
     	right: 0;
     	width: 300px;
     	height: 15px;
-    	cursor : pointer; /* 当光标悬停在划块上时 鼠标指针变为手形*/
+    	cursor : pointer;
     	background: red;
-    	border-radius: 5px 0 0 0; /*使用圆角 更好看一些 */
+    	border-radius: 5px 0 0 0;
     	z-index: 1;
     }
     .spa-shell-chat:hover{
-    	background: #a00; /*光标悬停在滑块上面 更改滑块的背景色 */
+    	background: #a00;
     }
+*/
     .spa-shell-modal{
     	margin-top: -200px;
     	margin-left: -200px;
@@ -90,4 +92,5 @@
     	background: #fff;
     	border-radius: 3px;
     	z-index: 2;
+		display: none;
     }

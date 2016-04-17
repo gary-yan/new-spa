@@ -1,9 +1,18 @@
 <!DOCTYPE html>
+<!--
+spa.html
+spa.browser document
+-->
 <html>
 <head>
-	<title>SPA Starter</title>
+	<!-- ie9+ rendering support for lastest standards -->
+	<meta http-equiv="content-type" content="text/html" charset="iso-8859-1">
+	<meta http-equiv="x-ua-compatible" content="IE=eage"/>
+	<title>SPA Starter4</title>
+<!-- third-party stylesheets -->
+	<!--our stylesheets -->
 
-	<!--stylesheets-->
+	<link rel="stylesheet" type="text/css" href="css/spa.chat.css">
 	<link rel="stylesheet" type="text/css" href="css/spa.css">
 	<link rel="stylesheet" type="text/css" href="css/spa.shell.css">
 
@@ -12,9 +21,14 @@
 	<script src="js/jq/jquery-1.9.0.min.js"></script>
 	<script src="js/jq/jquery.uriAnchor.js"></script>
 
+
+
 	<!--our javascript -->
 	<script src="js/spa.js"></script>
 	<script src="js/spa.shell.js"></script>
+	<script src="js/spa.chat.js"></script>
+	<script src="js/spa.util.js"></script>
+	<script src="js/spa.model.js"></script>
 	<script>
 	$(function(){
 	spa.initModule($('#spa'));
